@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //donner un nombre aleatoire arrondi
+        var x=Math.round(Math.random() * 101)
+        var c=0  //compteur
+        
+        do {  // tant que 
+            c++
+            var y=prompt('donnez un nombre ');
+            if (y<x) {
+                alert('plus grand ')
+            }
+            if (y>x){
+                alert('plus petit ')
+            }
+        } while (x!=y); //condition d'arret 
+        alert(`le nombre d'essaie est : ${c}`)
+    </script>
+</body>
+</html>

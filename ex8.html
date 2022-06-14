@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calcul_salaire() {
+            var salaire_net = 0;
+            var salaire_brut = Number(prompt('donnez le salaire brut '));
+            salaire_net = salaire_brut - (salaire_brut * (0.30))
+            var bonus = Number(prompt(`est ce qu'il aura un bonus `));
+            salaire_net += bonus
+            var allocation = Number(prompt(`est ce qu'il aura un allocation `));
+            salaire_net += allocation
+            var genre = Number(prompt(`est ce que le genre est un hommme ou une femme`));
+            if (genre == "femme") {
+                salaire_net = salaire_net + salaire_brut * (0.02);
+            }
+            var nb_travailleur = Number(prompt(`donnez le nb des travailleurs à charge `));
+            if (nb_travailleur == 3) {
+                salaire_net = salaire_net + salaire_brut * (0.01)
+            }
+            if (nb_travailleur == 4) {
+                salaire_net = salaire_net + salaire_brut * (0.02)
+            }
+            alert(`salaire net est ${salaire_net}`)
+        }
+
+        calcul_salaire();
+
+    </script>
+</body>
+
+</html>

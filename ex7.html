@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var membre1 = {
+            identifiant: "10",
+            nom: "ahlem",
+            grade: 'etudiante',
+
+            toString: function () {
+                return this.identifiant +
+                    ' \n' + this.nom +
+                    '\n' + this.grade+
+                    '\n';
+            }
+        };
+
+        console.log(membre1);
+
+        var membre2= {
+            identifiant: "15",
+            nom: "bassma",
+            grade: 'etudiante',
+
+            toString: function () {
+                return this.identifiant +
+                    ' \n' + this.nom +
+                    '\n' + this.grade;
+            }
+        };
+
+        console.log(membre2);
+        // console.log(membre1.toString());
+
+
+        // var team = new Object();
+
+        // team.membres = [membre1, membre2]
+
+const team={
+    membres:[membre1,membre2]
+}
+
+alert(team.membres)
+
+    </script>
+</body>
+
+</html>
